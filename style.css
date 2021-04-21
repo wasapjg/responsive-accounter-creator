@@ -47,9 +47,12 @@ a {
 
 .logo-container {
 	grid-column: 1/5;
+	
 
 	display: flex;
 	justify-content: center;
+
+	height: 300px;
 }
 
 .panel-container{
@@ -161,6 +164,22 @@ button{
 	color: #fff;
 	background: var(--primary-color);
 	border-radius: 8px;
+}
+
+button:focus, button:hover {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	padding: 10px 24px;
+	color: #e8e8e8e8;
+	background: #001fd2;
+	border-radius: 8px;
+	outline: none;
+}
+
+
+a:hover, a:focus {
+	color: #001fd2;
 }
 
 
