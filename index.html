@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Productores/Acesores de seguros</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="whith=device-whith, initial-scale=1,
+	maximun-scale=5">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="text/css" href="Pdl-icon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="background-overlay"><div id="container">
+		<div class="logo-container">
+			<img src="funca.jpeg" alt="Behold">
+		</div>
+
+
+		<div class="panel-container">
+			<div class="panel">
+				<h1 class="panel__heading">Crea una cuenta</h1>
+
+				<p class="panel__subheading">Ya tienes una cuenta? <a href="#">Iniciar</a>
+				</p>
+
+
+				<form onsubmit="alert(`Cuenta creada con exito`)" autocomplete="off">
+					<div class="input">
+						<label for="email-addres">Email</label>
+						<input type="email" required id="email-addres">
+
+						<div class="input__indicator"></div>
+					</div>
+
+					<div class="name">
+						<div class="input">
+						<label for="first-name">Nombre</label>
+						<input type="text" required id="first-name">
+
+						<div class="input__indicator"></div>
+					</div>
+
+					<div class="input">
+						<label for="last-name">Apellido</label>
+						<input type="text" required id="last-name">
+
+						<div class="input__indicator"></div>
+					</div>
+					</div>
+
+					<div class="input">
+						<label for="password">Contraseña</label>
+						<input type="password" required id="password">
+
+						<div class="input__indicator"></div>
+					</div>
+
+					<div class="date-of-birth">
+						<h6 class="date-of-birth__heading">Fecha de nacimíento</h6>
+					</div>
+
+					<div class="date-of-birth__inputs">
+						<div class="dropdown">
+						<label for="month">Mes</label>
+
+						<select name="month" id="month">
+							<option value="january">Enero</option>
+							<option value="feburary">Febrero</option>
+							<option value="march">Marzo</option>
+							<option value="april">Abril</option>
+							<option value="may">Mayo</option>
+							<option value="june">Junio</option>
+							<option value="july">Julio</option>
+							<option value="august">Agosto</option>
+							<option value="september">Septiembre</option>
+							<option value="october">Octubre</option>
+							<option value="november">Noviembre</option>
+							<option value="december">Diciembre</option>
+						</select>
+					</div>
+
+					<div class="input">
+						<label for="day">Dia</label>
+						<input type="number" required id="day" min="1" max="31">
+
+						<div class="input__indicator"></div>
+					</div>
+
+					<div class="input">
+						<label for="year">Año</label>
+						<input type="number" required id="year" min="1900" max="2021">
+
+						<div class="input__indicator"></div>
+					</div>
+					</div>
+					
+
+					<p class="consents">
+						Para crear tu cuenta, debes aceptar los <a href="#">Terminos y condiciones</a>
+					</p>
+
+					<button type="submit">Crear cuenta</button>
+				</form>
+			</div>
+		</div></div>
+	<script >
+		var images = ["seguros.jpg", "protector.jpg", "casa.jpg", "escudo.jpg"];
+function changeBackground() {
+	var randomNumbre = Math.floor(Math.random() * images.length);
+	document.body.style.backgroundImages = 
+		"url(img/" + images[randomNumbre] + ")";}
+
+	window.onload = changeBackground;
+</script>
+</body>
+</html>
